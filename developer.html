@@ -1,0 +1,197 @@
+---
+layout: dev
+title: "Coding Raven"
+description: "Developer"
+tech: Java Python HTML5 JavaScript Node OSX CSS3 SQL
+---
+<!-- /.row -->
+<div class="row index all-posts">
+
+	<!-- Large Column -->
+	<div class="col-md-9 whiteBG">
+
+		<div class="well">
+			<h3 class="heading text-muted">Contributions</h3>
+			<div class="calendar">
+				<!-- Loading stuff -->
+				Loading...
+			</div>
+		</div>
+
+		<div id="latest" class="well latest">
+			<h3 class="heading text-muted">Latest</h3>
+				<div class="content">
+					{% if site.latest-projects %}
+						{% for projects in site.latest-projects %}
+							{% if projects.main %}
+							<div class="item featured text-center">
+								<h3 class="title"><a href="#" target="_blank">{{ projects.title }}</a></h3>
+								<p class="summary">{{ projects.summary }}</p>
+								<div class="featured-image">
+									<a href="{{ projects.url }}" target="_blank">
+									<img class="img-responsive project-image" src="{{ projects.imgurl }}" alt="{{ projects.title }}" height="350px" width="350px"/>
+									</a>
+									<!--<div class="ribbon">
+										<div class="text">New</div>
+									</div>-->
+								</div>
+								<div class="desc text-left">
+									<p>Main project.</p>
+									<p>{{ projects.description }}</p>
+									<!--<a href="/code/" class="btn btn-default btn-shop" type="button">Learn More</a>-->
+								</div><!--//desc-->
+							</div><!--//item-->
+							<hr class="divider"/><br/>
+							{% else %}
+							<div class="item row">
+								<a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">
+								<img class="img-responsive project-image" src="{{ projects.imgurl }}" alt="{{ projects.title }}" />
+								</a>
+								<div class="desc col-md-8 col-sm-8 col-xs-12">
+									<h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">{{ projects.title }} - {{ projects.summary}}</a></h3>
+									<p>{{ projects.description }}</p>
+									<p><a class="more-link" href="{{ projects.url }}" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+								</div><!--//desc-->
+							</div><!--//item-->
+							{% endif %}
+				{% endfor %}
+			{% endif %}
+			</div><!--//content-->
+		</div>
+
+		<div class="well">
+			<h3 class="heading text-muted">Experience</h3>
+				<div class="content">
+					<div class="item">
+						<h4 class="title">
+							<strong>Software Engineer</strong> -
+							<span class="place"><a href="#">Northrop Grumman</a></span> <span class="year">(2015 - Present)</span>
+						</h4>
+						<p>Maintained and upgraded the C# business logic and unit tests for a simulation communication component that controls the initialization of military training events using the Universal Gateway Portal (distributed mission ops translation software). Lead an IRAD team and assisted in the development of an additional security layer for the networking component of OpenStack on RedHat Linux. Currently working on company-wide website porting project and upgrading varying applications on the site.</p>
+					</div><!--//item-->
+					<div class="item">
+						<h4 class="title">
+							<strong>Systems Test Engineer</strong> - <span class="place"><a href="#">Northrop Grumman</a></span> <span class="year">(2015)</span>
+						</h4>
+						<p>Python and C++ development of out-the-window flight visualizations and simulation controls for a real-time fixed wing aircraft simulator for an Air Force project. This simulator is utilized as a pre-flight test bed to verify flight-readiness of aircraft components pre-installation.</p>
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="title">
+							<strong>Software Engineer</strong> - <span class="place"><a href="#">Leidos</a></span> <span class="year">(2014 - 2015)</span>
+						</h4>
+						<p>Development of real-time collective helicopter simulation software. Utilized GTK, C and Ada to provide new interface features for the battle master controller for the AVCATT program.</p>
+					</div><!--//item-->
+					<a class="btn btn-cta-secondary" href="https://www.linkedin.com/in/edmaryrosado" target="_blank">More on Linkedin <i class="fa fa-chevron-right"></i></a>
+				</div><!--//content-->
+		</div>
+	</div>
+
+	<!-- Sidebar Widgets Column -->
+	<div class="col-md-3 widgetColumn">
+		<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 15px; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+		<div class="authorWell well whiteBG">
+			<div class="avatar"><img class="img-circle" border="5" src="{{ site.baseurl }}/img/blog_images/github_avatar.PNG"></div>
+			<br>
+			<h4 class="text-muted devName" >Edmary Rosado</h4>
+			<ul class="list-inline list-social authorSocial">
+				{% for network in site.author-social %}
+				<li>
+					<a href="{{ network.url }}" class="btn btn-social"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="well whiteBG">
+			<h3 class="heading text-muted">
+				Skills
+			</h3>
+			<div class="content">
+				<div class="skillset">
+					<div class="item">
+						<h4 class="level-title">Java</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="72%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">C#</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="68%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">HTML5, CSS3</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="65%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">Javascript &amp; jQuery</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="50%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">Python</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="35%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">Ruby</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="25%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+				</div>
+			</div><!--//content-->
+		</div>
+
+		<!-- Word Cloud -->
+		<!--<div class="well">
+			<h3 class="heading text-muted">Tech</h3>
+			{% for tech in page.tech %}
+				{% assign tech = tech | append: site.tech | remove: '[' | remove: ']' | remove: ','| remove: ' ' %}
+			{% endfor %}
+			{% assign tech = tech | replace: '""' , '#' | remove: '"' | split: '#' | uniq | join: ' ' | split: ' ' %}
+			{% for tag in tech %}
+				<a class="btn tag">{{ tag }}</a>
+			{% endfor %}
+		</div>-->
+
+		<!-- Word Cloud -->
+		<div class="well">
+			<h3 class="heading text-muted">Blog</h3>
+				{% for post in site.posts %}
+					<h4>
+						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					</h4>
+				{% endfor %}
+		</div>
+
+		<div class="well">
+			<h3 class="heading text-muted">Education</h3>
+				Computer Science, M.S. <small class="text-muted">2016</small><br/>
+				Liberal Studies, B.S. <small class="text-muted">2013</small><br/>
+				Computer Science, A.S. <small class="text-muted">2011</small>
+			<!--@
+			<small class="text-muted">
+				<a href="http://www.nova.edu/" target="_blank">NSU</a>
+			</small>-->
+		</div>
+	</div>
+</div>
+<!-- /.row -->

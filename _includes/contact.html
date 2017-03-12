@@ -1,0 +1,26 @@
+
+<section id="contact" class="contactSection bg-primary">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div class="col-md-12 col-sm-12">
+					<div class="footerWidget social">
+						<ul class="list-inline list-social">
+							{% for network in site.social %}
+							<li>
+								<a href="{{ network.url }}" class="btn-social" target="_blank"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+							</li>
+							{% endfor %}
+						</ul><br/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<p>&copy; {{ site.copyright-dates }} {{ site.copyright }} <a rel="nofollow" target="blank" href="http://www.codingraven.com">{{ site.title }}</a> / All Rights Reserved.</p>
+	</div>
+</footer>

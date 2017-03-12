@@ -1,0 +1,173 @@
+---
+layout: front
+---
+<!-- /.row -->
+<div class="row index all-posts">
+
+	<!-- Large Column -->
+	<div class="col-md-9 whiteBG">
+
+		<div class="well repotoggle">
+			<h3 class="heading text-muted">Contributions</h3>
+			<!--<svg class="img-responsive" width="650" height="300"></svg>-->
+			<div class="calendar">
+				 <!--Loading stuff -->
+				Loading...
+			</div>
+		</div>
+
+		<div id="latest" class="well latest openSourceProjContainer">
+			<input id="githubUser" value="{{ site.githubUser }}" type="hidden"/>
+			<h3 class="heading text-muted">Latest</h3>
+				<div class="content">
+					{% if site.opensource-projects %}
+						{% for projects in site.opensource-projects %}
+							{% if projects.main %}
+							<div id="{{ projects.reponame }}" class="item featured text-center">
+								<h3 class="title"><a href="#" target="_blank">{{ projects.title }}</a></h3>
+								<p class="summary">{{ projects.summary }}</p>
+								<div class="featured-image">
+									<a href="{{ projects.url }}" target="_blank">
+									<img class="img-responsive project-image" src="{{ projects.imgurl }}" alt="{{ projects.title }}" height="350px" width="350px"/>
+									</a>
+								</div>
+								<div class="desc text-left">
+									<p>Main project.</p>
+									<p id="description"></p>
+								</div><!--//desc-->
+							</div><!--//item-->
+							<hr class="divider"/><br/>
+							{% else %}
+							<div id="{{ projects.reponame }}" class="item row">
+								<a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">
+								<img class="img-responsive project-image" src="{{ projects.imgurl }}" alt="{{ projects.title }}" />
+								</a>
+								<div class="desc col-md-8 col-sm-8 col-xs-12">
+									<h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">{{ projects.title }} - {{ projects.summary}}</a></h3>
+									<p id="description"></p>
+									<p><a class="more-link" href="{{ projects.url }}" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+								</div><!--//desc-->
+							</div><!--//item-->
+							{% endif %}
+				{% endfor %}
+			{% endif %}
+			</div><!--//content-->
+		</div>
+
+		<div class="well">
+			<h3 class="heading text-muted">Experience</h3>
+				<div class="content">
+					<div class="item">
+						<h4 class="title">
+							<strong>Software Engineer</strong> -
+							<span class="place"><a href="#">Employer Name</a></span> <span class="year">(2015 - Present)</span>
+						</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!--//item-->
+					<div class="item">
+						<h4 class="title">
+							<strong>Systems Test Engineer</strong> - <span class="place"><a href="#">Employer Name</a></span> <span class="year">(2015)</span>
+						</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="title">
+							<strong>Software Engineer</strong> - <span class="place"><a href="#">Employer Name</a></span> <span class="year">(2014 - 2015)</span>
+						</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!--//item-->
+					<a class="btn btn-cta-secondary" href="https://www.linkedin.com/in/" target="_blank">More on Linkedin <i class="fa fa-chevron-right"></i></a>
+				</div><!--//content-->
+		</div>
+	</div>
+
+	<!-- Sidebar Widgets Column -->
+	<div class="col-md-3 widgetColumn">
+		<div class="authorWell well whiteBG">
+			<div class="avatar"><img class="img-circle" border="5" src="http://placehold.it/350x350"></div>
+			<br>
+			<h4 class="text-muted devName" >Developer Name</h4>
+			<ul class="list-inline list-social authorSocial">
+				{% for network in site.social %}
+				<li>
+					<a href="{{ network.url }}" class="btn btn-social"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="well whiteBG">
+			<h3 class="heading text-muted">
+				Skills
+			</h3>
+			<div class="content">
+				<div class="skillset">
+					<div class="item">
+						<h4 class="level-title">Java</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="72%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">C#</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="68%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">HTML5, CSS3</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="65%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">Javascript &amp; jQuery</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="50%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">Python</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="35%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+
+					<div class="item">
+						<h4 class="level-title">Ruby</h4>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="25%">
+							</div>
+						</div><!--//level-bar-->
+					</div><!--//item-->
+				</div>
+			</div><!--//content-->
+		</div>
+
+		<!-- Word Cloud -->
+		<div class="well">
+			<h3 class="heading text-muted">Blog</h3>
+				{% for post in site.posts %}
+					<h4>
+						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					</h4>
+				{% endfor %}
+		</div>
+
+		<div class="well">
+			<h3 class="heading text-muted">Education</h3>
+				Computer Science, B.S. <small class="text-muted">2016</small>
+		</div>
+	</div>
+</div>
+<!-- /.row -->

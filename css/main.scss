@@ -1,0 +1,17 @@
+---
+---
+
+@charset "utf-8";
+
+$head-primary: #222;
+$head-secondary: #333;
+$head-tertiary: #555;
+$theme-primary: #BB141A;
+$theme-secondary: #dc2430;
+$theme-dark: #222;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base"
+;

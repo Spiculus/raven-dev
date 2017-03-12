@@ -1,0 +1,65 @@
+# Site settings
+title: raven-dev
+email: email@some-domain.com
+description: raven-dev 
+copyright-dates: 2017
+githubUser: CodingRaven #change to your own github repo name
+
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url:  # the base hostname & protocol for your site
+
+# Google Ad Words Data from scripts code (using Google responsive options) and ad client
+data-ad-client: 
+google_ad_client: 
+google_analytics: 
+disqus_account: 
+
+# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
+social:
+  - title: github
+    url: http://github.com/
+  - title: stack-overflow
+    url: http://stackoverflow.com/
+  - title: linkedin
+    url: https://www.linkedin.com/in/
+
+# Latest Projects - THIS IS WHERE YOU PLACE YOUR OWN TITLES, DESCRIPTIONS, URLS, REPONAMES, AND IMGURLS FOR PORTFOLIO
+# Updating the following will automatically update your chart and Latest projects well in the index.html
+opensource-projects:
+  - title: Main Project Title
+    main: true
+    summary: Main Project Summary
+    description: Main Project Description
+    url: https://github.com/CodingRaven/raven-dev
+    reponame: raven-dev
+    imgurl: http://placehold.it/350x150
+    storeurl: 
+    amazonapp:
+  - title: Smaller Project Title
+    main:
+    summary: Smaller Project Summary
+    description: Smaller Project Description
+    url: https://github.com/CodingRaven/raven-dev
+    reponame: alexa-sassy-magic8-skill
+    imgurl: http://placehold.it/350x150
+    storeurl: 
+    amazonapp: true
+  - title: Smaller Project Title
+    main:
+    summary: Smaller Project Summary
+    description: Smaller Project Description
+    url: https://github.com/CodingRaven/raven-dev
+    reponame: alexa-whiskey-geek-skill
+    imgurl: http://placehold.it/350x150
+    storeurl: 
+    amazonapp: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
+# Build settings
