@@ -5,7 +5,7 @@ description: raven-dev
 copyright-dates: 2017
 githubUser: CodingRaven #change to your own github repo name
 
-baseurl: "/raven-dev/" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
 url:  # the base hostname & protocol for your site
 
 # Google Ad Words Data from scripts code (using Google responsive options) and ad client
