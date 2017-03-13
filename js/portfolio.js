@@ -131,26 +131,9 @@ $(function () {
 
 	$('.level-bar-inner').css('width', '0');
 
-
-	// function stackMax(layer) {
-	// return d3.max(layer, function(d) { return d[1]; });
-	// }
-
-	// function stackMin(layer) {
-	// return d3.min(layer, function(d) { return d[0]; });
-	// }
-
-	// function transition() {
-	// var t;
-	// d3.selectAll("path")
-	// 	.data((t = layers1, layers1 = layers0, layers0 = t))
-	// 	.transition()
-	// 	.duration(2500)
-	// 	.attr("d", area);
-	// }
-
 	$( document ).ready(function() {
 		retrieveFeaturedRepoNames();
+
 		for(i=0; i < featuredProjectsCache.length; i++) {
 			loadRepositories(featuredProjectsCache[i].name);
 		}
