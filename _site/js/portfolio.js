@@ -5,7 +5,6 @@ $(function () {
 	var featuredProjectsCache = [];
 	var user_avatar = null;
 	var contributionsCache = [];
-	var access_code = 'b9fe89cc1130143d21762ccff1372aef37afca9b'; // Access code permitting view of public account info
 
 	function loadContributions(reponame) {
 		var requri   = 'https://api.github.com/repos/' + github_username;
