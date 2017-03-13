@@ -10,9 +10,9 @@ Raven-Dev is an open source developer portfolio template using Jekyll.
 
 ## Snapshots
 <a href="http://codingraven.com/img/featured_projects/raven-dev/1.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/1.png" width="400px" height="250px"/></a>
-<a href="http://codingraven.com/img/featured_projects/raven-dev/1.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/2.png" width="400px" height="250px"/></a>
-<a href="http://codingraven.com/img/featured_projects/raven-dev/1.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/3.png" width="400px" height="250px"/></a>
-<a href="http://codingraven.com/img/featured_projects/raven-dev/1.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/4.png" width="400px" height="250px"/></a>
+<a href="http://codingraven.com/img/featured_projects/raven-dev/2.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/2.png" width="400px" height="250px"/></a>
+<a href="http://codingraven.com/img/featured_projects/raven-dev/3.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/3.png" width="400px" height="250px"/></a>
+<a href="http://codingraven.com/img/featured_projects/raven-dev/4.png" target="_blank"><img src="http://codingraven.com/img/featured_projects/raven-dev/4.png" width="400px" height="250px"/></a>
 
 # Running the Project Locally
 In order to run the project locally, you will need to have jekyll and its pre-reqs installed. To do so, visit the <a href="https://jekyllrb.com/docs/installation/">Jekyll Documentation</a> page.
